@@ -1,9 +1,7 @@
-﻿using BenchmarkDotNet.Running;
-
-class Program
+﻿class Program
 {
     private static void Main()
     {
-        BenchmarkRunner.Run<StringVsStringBuilderBenchmark>();
+        
     }
 }
