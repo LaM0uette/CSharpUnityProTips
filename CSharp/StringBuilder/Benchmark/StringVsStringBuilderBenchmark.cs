@@ -22,13 +22,13 @@ public class StringVsStringBuilderBenchmark
     [Benchmark]
     public string StringBuilder()
     {
-        StringBuilder stringBuilder = new();
+        StringBuilder sb = new StringBuilder();
         
         for (int i = 0; i < N; i++)
         {
-            stringBuilder.Append('A');
+            sb.Append('A');
         }
         
-        return stringBuilder.ToString();
+        return sb.ToString();
     }
 }
