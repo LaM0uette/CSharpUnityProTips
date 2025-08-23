@@ -9,14 +9,14 @@ public class StringVsStringBuilderBenchmark
     [Benchmark]
     public string String()
     {
-        string result = string.Empty;
+        string s = string.Empty;
         
         for (int i = 0; i < N; i++)
         {
-            result += 'A';
+            s += 'A';
         }
         
-        return result;
+        return s;
     }
 
     [Benchmark]
