@@ -3,15 +3,6 @@ using BenchmarkDotNet.Running;
 
 class Program
 {
-    /* Uncomment to run the benchmark
-     
-     public static void Main()
-    {
-        BenchmarkRunner.Run<StringVsStringBuilderBenchmark>();
-    }
-    
-    */
-    
     public static void Main()
     {
         /*
@@ -99,4 +90,13 @@ class Program
         Console.WriteLine($"HashCode sb4 : {sb4.GetHashCode()}");
         Console.WriteLine($"Capacité du buffer : {sb3.Capacity}");
     }
+    
+    /* Uncomment to run the benchmark
+
+     public static void Main()
+    {
+        BenchmarkRunner.Run<StringVsStringBuilderBenchmark>();
+    }
+
+    */
 }
