@@ -4,7 +4,7 @@ using BenchmarkDotNet.Attributes;
 [MemoryDiagnoser, ShortRunJob]
 public class StringVsStringBuilderBenchmark
 {
-    private const int N = 100_000;
+    private const int N = 1000;
 
     [Benchmark]
     public string String()
